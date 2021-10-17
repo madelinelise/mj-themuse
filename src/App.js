@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Search from './components/Search';
+import Search from './components/search';
 
 function App() {
 
@@ -18,9 +18,9 @@ function App() {
 
   return (
     <div className="jobs">
-    {jobs && (
-      <Search jobItems={jobs}/>
-    )}
+      {jobs && (
+        <Search jobItems={jobs}/>
+      )}
     </div>
 
   );
