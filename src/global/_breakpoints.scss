@@ -1,0 +1,24 @@
+$bp-under-xsm: 'max-width: 543px';
+$bp-xsm: 544px;
+$bp-under-sm: 'max-width: 767px';
+$bp-sm: 768px;
+$bp-under-md: 'max-width: 1023px';
+$bp-md: 1024px;
+$bp-lg: 1200px;
+$bp-fs: 1220px;
+$bp-xl: 1540px;
+
+// Expects $viewport to either be a number: 200px
+// Or a string: 'max-width: 300px'
+@mixin breakpoint($viewport) {
+  @if type-of($viewport) == number {
+    @media screen and ( min-width: $viewport ) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and ( $viewport ) {
+      @content;
+    }
+  }
+}

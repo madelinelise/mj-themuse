@@ -1,0 +1,11 @@
+@import '../global/breakpoints';
+@import '../global/fonts';
+@import '../global/variables';
+
+// Next Steps: 
+// - Create a global file, maybe use reset
+// and include body selector below. 
+
+body {
+  @include font-primary;
+}
