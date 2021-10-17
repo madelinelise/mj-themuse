@@ -1,0 +1,33 @@
+@import '../../global/init';
+
+.layout-2x {
+
+  @include breakpoint($bp-lg) {
+    display: flex;
+  }
+}
+
+.layout-2x__item {
+  padding: 20px;
+
+  &:first-of-type {
+
+    @include breakpoint($bp-lg) {
+      max-width: 33%;
+    }
+  }
+}
+
+.search__filters {
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  .search__input {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+}

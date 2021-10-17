@@ -1,0 +1,20 @@
+@import '../../global/init';
+
+.card {
+  border: 1px solid $color-lgray;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  font-size: 1.125rem;
+  color: $color-font-primary;
+}
+
+.card__locations {
+  display: flex;
+}
+
+.card__location {
+  margin-right: 5px;
+}
